@@ -1,0 +1,8 @@
+# Ignore bower_components
+/bower_components/
+
+# Ignore node_modules
+/node_modules/
+
+# Ignore
+/js/lib/
