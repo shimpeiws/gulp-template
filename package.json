@@ -1,0 +1,29 @@
+{
+  "name": "gulp-template",
+  "version": "0.0.0",
+  "description": "gulp-template =============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimpeiws/gulp-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shimpeiws/gulp-template/issues"
+  },
+  "homepage": "https://github.com/shimpeiws/gulp-template",
+  "devDependencies": {
+    "coffeeify": "^1.0.0",
+    "gulp": "^3.8.10",
+    "gulp-browserify": "^0.5.0",
+    "gulp-coffee": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "main-bower-files": "^2.4.1"
+  }
+}
