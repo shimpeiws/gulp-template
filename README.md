@@ -1,7 +1,7 @@
 gulp-template
 =============
 
-* gulp + bower + browerify
+* gulp + bower + browserify
 
 # directories
 

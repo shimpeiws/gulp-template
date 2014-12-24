@@ -1,3 +1,4 @@
 $(function() {
-  return console.log('This is test.js FROM test.coffee');
+  alert('test.coffee');
+  console.log('This is test.js FROM test.coffee');
 });

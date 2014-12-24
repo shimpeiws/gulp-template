@@ -6,6 +6,7 @@ bower = require 'main-bower-files'
 browserify = require 'gulp-browserify'
 rename = require 'gulp-rename'
 # coffeeify = require 'coffeeify'
+source = require 'vinyl-source-stream'
 
 files =
   coffee: 'coffee/src/**/*.coffee'
