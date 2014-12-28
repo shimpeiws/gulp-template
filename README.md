@@ -23,6 +23,24 @@ gulp-template
 └── sass
 ```
 
+# setup
+
+```
+% npm install && bower install                                                                                                                                                         [0:21:58]
+bower jquery#~2.1.3         not-cached git://github.com/jquery/jquery.git#~2.1.3
+bower jquery#~2.1.3            resolve git://github.com/jquery/jquery.git#~2.1.3
+bower lodash#~2.4.1         not-cached git://github.com/lodash/lodash.git#~2.4.1
+bower lodash#~2.4.1            resolve git://github.com/lodash/lodash.git#~2.4.1
+bower lodash#~2.4.1           download https://github.com/lodash/lodash/archive/2.4.1.tar.gz
+bower jquery#~2.1.3           download https://github.com/jquery/jquery/archive/2.1.3.tar.gz
+bower jquery#~2.1.3            extract archive.tar.gz
+bower lodash#~2.4.1            extract archive.tar.gz
+bower jquery#~2.1.3           resolved git://github.com/jquery/jquery.git#2.1.3
+bower lodash#~2.4.1           resolved git://github.com/lodash/lodash.git#2.4.1
+bower jquery#~2.1.3            install jquery#2.1.3
+bower lodash#~2.4.1            install lodash#2.4.1
+```
+
 # run
 
 ```

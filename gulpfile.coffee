@@ -3,10 +3,12 @@ coffee = require 'gulp-coffee'
 sass = require 'gulp-ruby-sass'
 plumber = require 'gulp-plumber'
 bower = require 'main-bower-files'
-browserify = require 'gulp-browserify'
+# browserify = require 'gulp-browserify'
+browserify = require 'browserify'
 rename = require 'gulp-rename'
-# coffeeify = require 'coffeeify'
+coffeeify = require 'coffeeify'
 source = require 'vinyl-source-stream'
+debowerify = require 'debowerify'
 
 files =
   coffee: 'coffee/src/**/*.coffee'
@@ -25,16 +27,13 @@ gulp.task 'coffee', ->
     .pipe coffee
       bare: true
     .pipe gulp.dest dest.js
-    
-# browserify
-gulp.task 'browserify', ->
-  gulp.src files.coffeeLib, read: false
-  .pipe plumber()
-  .pipe browserify
-    transform: ['coffeeify']
-    extentions: ['.coffee']
-    debug: true
-  .pipe rename 'app.js'
+
+gulp.task 'browserify' , ->
+  browserify
+    entries: ['./coffee/lib/main.coffee']
+    extensions: ['.coffee']
+  .bundle()
+  .pipe source 'app.js'
   .pipe gulp.dest dest.jsLib
 
 gulp.task 'sass', ->
@@ -55,4 +54,5 @@ gulp.task 'build', ['coffee', 'sass']
 
 # gulp
 gulp.task 'default', ->
+  # gulp.run ['bower', 'coffee', 'sass']
   gulp.run ['bower', 'browserify', 'coffee', 'sass']
